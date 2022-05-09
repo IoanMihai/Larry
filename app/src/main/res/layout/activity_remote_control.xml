@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteControl"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/back_button_foreground"
+        android:layout_alignParentTop="true"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/title_remote_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_button"
+        android:layout_centerHorizontal="true"
+        android:text="Remote control"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/robot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_remote_control"
+        android:layout_centerHorizontal="true"
+        android:text="WALL-E"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/robot_name"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="50dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#31FFFFFF"
+        android:clickable="true"
+        android:focusable="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_up_foreground"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        app:cardBackgroundColor="#31FFFFFF"
+        android:elevation="10dp"
+        app:cardCornerRadius="50dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_foreground"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrow_up"
+        android:layout_marginStart="45dp"
+        app:cardBackgroundColor="#31FFFFFF"
+        app:cardCornerRadius="50dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button_foreground"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow_up"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        app:cardBackgroundColor="#31FFFFFF"
+        app:cardCornerRadius="50dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right_foreground"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
